@@ -35,6 +35,8 @@ function loadRepos(userName) {
 }
 
 var myButton = document.querySelector('#btnGetRepos');
-myButton.addEventListener('click', function() {
+myButton.addEventListener('click', clickToLoadRepos);
+
+function clickToLoadRepos() {
     loadRepos('CodeYourFuture');
-});
+}
